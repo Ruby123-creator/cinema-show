@@ -10,11 +10,11 @@ const Showscreen = () => {
     const [loading ,setloading] = useState(true);
    const {imdb} = useParams()
  const Navigate = useNavigate()
-   console.log(imdb)
+  //  console.log(imdb)
     useEffect(()=>{
        const fetchDetails = async()=>{
         const show = await axios.get(`https://api.tvmaze.com/lookup/shows?imdb=${imdb}`)
-        console.log(show.data)
+        // console.log(show.data)
         setloading(false)
         setdrama(show.data)
        }

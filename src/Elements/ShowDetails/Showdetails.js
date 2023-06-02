@@ -47,8 +47,8 @@ const Showdetails = ({drama}) => {
             <div>
             Genres: 
             {
-                drama.genres.map((item)=>(
-                    <span>{item}{","}</span>
+                drama.genres.map((item ,i)=>(
+                    <span key={i}>{item}{","}</span>
                 ))
             }
             </div>
@@ -56,7 +56,7 @@ const Showdetails = ({drama}) => {
             Language:{drama.language}
             </div>
             {
-              drama.status==='running'? <div>scheduled:{drama.schedule.time}P.M on {drama.schedule.days?.map((day)=>(<span>{day}{' '}</span>))}</div>:''
+              drama.status==='running'? <div>scheduled:{drama.schedule.time}P.M on {drama.schedule.days?.map((day,i)=>(<span key={i}>{day}{' '}</span>))}</div>:''
             }
            
             <div>Status:{drama.status}</div>

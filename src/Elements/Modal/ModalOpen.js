@@ -60,7 +60,7 @@ const ModalOpen =({moviename})=>{
                 <input type="number"  />
                 <br />
                  <label htmlFor="">Total Bill</label>
-                 <input type="text" value={seats*160} />
+                 <input type="number" value={seats*160}  />
                  <br />
                   <p>*prices of each ticket is 160</p>
               </form>
