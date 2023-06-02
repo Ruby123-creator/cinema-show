@@ -1,0 +1,33 @@
+.cards{
+   border: 1px solid rgb(159, 159, 159); 
+   padding: 10px;
+   margin: 20px;
+   border-radius: 10px;
+   max-width: 300px;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-top: 2px solid black; */
+    flex-direction: column;
+}
+.show-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.cards .rating{
+    margin-right: 60px;
+}
+.cards button{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}

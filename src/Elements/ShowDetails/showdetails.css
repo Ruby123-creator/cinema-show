@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+    background-color: rgb(240, 229, 229);
+}
+.movie-info{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: rgb(183, 180, 180);
+    padding:0 20px;
+}
+.about-movie{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: grey;
+}
+.info{
+    margin: 20 40px;
+    font-size: 25px;
+    color: rgb(242, 239, 239);
+}
+.info button{
+    margin:10px 0;
+    padding: 10px;
+    border: none;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.description{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:600px) {
+    .about-movie{
+        align-items: center;
+        flex-direction: column;
+    }
+}

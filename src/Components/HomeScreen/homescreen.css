@@ -1,0 +1,9 @@
+.show-screen{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(243, 238, 238);
+}
